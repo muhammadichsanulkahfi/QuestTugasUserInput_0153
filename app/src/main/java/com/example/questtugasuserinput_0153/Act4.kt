@@ -419,12 +419,12 @@ fun SkillCheckbox(
 
 
 
-var namaDepan by remember { mutableStateOf("") }
+var namaBelakang by remember { mutableStateOf("") }
 
 OutlinedTextField(
-value = namaDepan,
-onValueChange = { namaDepan = it },
-label = { Text(stringResource(R.string.first_name)) },
+value = namaBelakang,
+onValueChange = { namaBelakang = it },
+label = { Text(stringResource(R.string.last_name)) },
 modifier = Modifier.weight(1f),
 singleLine = true
 )
