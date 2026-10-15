@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_primary">#7038C8</color>
+    <color name="screen_background">#F8F7FC</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#292936</color>
+    <color name="text_secondary">#858585</color>
+    <color name="border_color">#777787</color>
+    <color name="button_disabled">#E0E0E0</color>
+    <color name="button_text">#FFFFFF</color>
+</resources>
