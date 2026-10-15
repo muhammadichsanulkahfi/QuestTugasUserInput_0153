@@ -418,9 +418,11 @@ fun SkillCheckbox(
 }
 
 
-var webSkill by remember { mutableStateOf(false) }
 
-Checkbox(
-checked = webSkill,
-onCheckedChange = { webSkill = it }
-)
+Row(
+modifier = Modifier.fillMaxWidth(),
+horizontalArrangement = Arrangement.SpaceBetween,
+verticalAlignment = Alignment.CenterVertically
+) {
+    // Checkbox Android, UI/UX, dan Web
+}
