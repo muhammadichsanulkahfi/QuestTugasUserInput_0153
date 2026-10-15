@@ -419,16 +419,8 @@ fun SkillCheckbox(
 
 
 
-val calendar = Calendar.getInstance()
-
-DatePickerDialog(
-context,
-{ _, year, month, day ->
-    tanggalLahir = "%02d/%02d/%04d".format(
-        day, month + 1, year
-    )
-},
-calendar.get(Calendar.YEAR),
-calendar.get(Calendar.MONTH),
-calendar.get(Calendar.DAY_OF_MONTH)
-).show()
+val experiences = listOf(
+    "Beginner",
+    "Intermediate",
+    "Expert"
+)
