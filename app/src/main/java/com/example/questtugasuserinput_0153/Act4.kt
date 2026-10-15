@@ -420,10 +420,5 @@ fun SkillCheckbox(
 
 
 
-<string name="form_title">Form Biodata</string>
-
-Text(
-text = stringResource(R.string.form_title),
-fontSize = 25.sp,
-fontWeight = FontWeight.Bold
-)
+<string name="form_subtitle">Silahkan isi biodata Anda dibawah ini !!!</string>
+Text(text = stringResource(R.string.form_subtitle))
