@@ -420,7 +420,12 @@ fun SkillCheckbox(
 
 
 
-@Composable
-fun Act4() {
-    FormBiodataScreen()
+Scaffold { innerPadding ->
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(innerPadding)
+    ) {
+        // Isi halaman
+    }
 }
