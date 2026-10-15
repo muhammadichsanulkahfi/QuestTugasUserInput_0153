@@ -420,17 +420,10 @@ fun SkillCheckbox(
 
 
 
-Column(
-modifier = Modifier
-.fillMaxWidth()
-.background(
-color = Color.White,
-shape = RoundedCornerShape(
-topStart = 28.dp,
-topEnd = 28.dp
+<string name="form_title">Form Biodata</string>
+
+Text(
+text = stringResource(R.string.form_title),
+fontSize = 25.sp,
+fontWeight = FontWeight.Bold
 )
-)
-.padding(24.dp)
-) {
-    // Isi form
-}
