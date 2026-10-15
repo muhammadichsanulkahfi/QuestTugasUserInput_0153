@@ -420,8 +420,5 @@ fun SkillCheckbox(
 
 
 
-Box(
-modifier = Modifier.fillMaxSize()
-) {
-    // Komponen halaman
-}
+<color name="purple_primary">#7038C8</color>
+<color name="screen_background">#F8F7FC</color>
