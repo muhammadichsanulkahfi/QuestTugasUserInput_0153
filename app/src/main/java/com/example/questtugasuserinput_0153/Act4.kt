@@ -419,8 +419,9 @@ fun SkillCheckbox(
 
 
 
-val experiences = listOf(
-    "Beginner",
-    "Intermediate",
-    "Expert"
+var androidSkill by remember { mutableStateOf(false) }
+
+Checkbox(
+checked = androidSkill,
+onCheckedChange = { androidSkill = it }
 )
