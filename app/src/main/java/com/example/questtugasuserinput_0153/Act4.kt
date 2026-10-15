@@ -419,10 +419,11 @@ fun SkillCheckbox(
 
 
 
-Row(
-modifier = Modifier.fillMaxWidth(),
-horizontalArrangement = Arrangement.SpaceBetween,
-verticalAlignment = Alignment.CenterVertically
+Button(
+onClick = { showResult = true },
+modifier = Modifier
+.fillMaxWidth()
+.height(52.dp)
 ) {
-    // Checkbox Android, UI/UX, dan Web
+    Text(stringResource(R.string.button_proceed))
 }
