@@ -418,9 +418,9 @@ fun SkillCheckbox(
 }
 
 
-var uiuxSkill by remember { mutableStateOf(false) }
+var webSkill by remember { mutableStateOf(false) }
 
 Checkbox(
-checked = uiuxSkill,
-onCheckedChange = { uiuxSkill = it }
+checked = webSkill,
+onCheckedChange = { webSkill = it }
 )
