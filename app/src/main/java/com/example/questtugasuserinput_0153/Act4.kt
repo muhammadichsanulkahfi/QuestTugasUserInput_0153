@@ -419,11 +419,19 @@ fun SkillCheckbox(
 
 
 
-val formValid = namaDepan.isNotBlank() &&
-        namaBelakang.isNotBlank() &&
-        emailValid &&
-        tanggalLahir.isNotBlank() &&
-        experience.isNotBlank() &&
-        (androidSkill || uiuxSkill || webSkill)
-
-enabled = formValid
+if (showResult) {
+    AlertDialog(
+        onDismissRequest = { showResult = false },
+        title = {
+            Text(stringResource(R.string.result_title))
+        },
+        text = {
+            Text("$namaDepan $namaBelakang\n$email")
+        },
+        confirmButton = {
+            TextButton(onClick = { showResult = false }) {
+                Text(stringResource(R.string.button_close))
+            }
+        }
+    )
+}
