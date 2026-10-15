@@ -420,5 +420,11 @@ fun SkillCheckbox(
 
 
 
-<color name="purple_primary">#7038C8</color>
-<color name="screen_background">#F8F7FC</color>
+Image(
+painter = painterResource(R.drawable.bg_brick_purple),
+contentDescription = null,
+modifier = Modifier
+.fillMaxWidth()
+.height(280.dp),
+contentScale = ContentScale.Crop
+)
