@@ -419,12 +419,12 @@ fun SkillCheckbox(
 
 
 
-var namaBelakang by remember { mutableStateOf("") }
+var email by remember { mutableStateOf("") }
 
 OutlinedTextField(
-value = namaBelakang,
-onValueChange = { namaBelakang = it },
-label = { Text(stringResource(R.string.last_name)) },
-modifier = Modifier.weight(1f),
+value = email,
+onValueChange = { email = it },
+label = { Text(stringResource(R.string.email)) },
+modifier = Modifier.fillMaxWidth(),
 singleLine = true
 )
