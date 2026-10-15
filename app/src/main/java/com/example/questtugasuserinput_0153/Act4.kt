@@ -419,6 +419,12 @@ fun SkillCheckbox(
 
 
 
+var namaDepan by remember { mutableStateOf("") }
 
-<string name="form_subtitle">Silahkan isi biodata Anda dibawah ini !!!</string>
-Text(text = stringResource(R.string.form_subtitle))
+OutlinedTextField(
+value = namaDepan,
+onValueChange = { namaDepan = it },
+label = { Text(stringResource(R.string.first_name)) },
+modifier = Modifier.weight(1f),
+singleLine = true
+)
