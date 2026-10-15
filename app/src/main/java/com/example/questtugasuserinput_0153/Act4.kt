@@ -419,11 +419,11 @@ fun SkillCheckbox(
 
 
 
-Button(
-onClick = { showResult = true },
-modifier = Modifier
-.fillMaxWidth()
-.height(52.dp)
-) {
-    Text(stringResource(R.string.button_proceed))
-}
+val formValid = namaDepan.isNotBlank() &&
+        namaBelakang.isNotBlank() &&
+        emailValid &&
+        tanggalLahir.isNotBlank() &&
+        experience.isNotBlank() &&
+        (androidSkill || uiuxSkill || webSkill)
+
+enabled = formValid
