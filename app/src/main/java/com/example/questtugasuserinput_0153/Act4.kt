@@ -419,12 +419,6 @@ fun SkillCheckbox(
 
 
 
-var email by remember { mutableStateOf("") }
-
-OutlinedTextField(
-value = email,
-onValueChange = { email = it },
-label = { Text(stringResource(R.string.email)) },
-modifier = Modifier.fillMaxWidth(),
-singleLine = true
-)
+val emailValid = android.util.Patterns.EMAIL_ADDRESS
+    .matcher(email)
+    .matches()
