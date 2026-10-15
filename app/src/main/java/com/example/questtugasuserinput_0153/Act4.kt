@@ -420,8 +420,7 @@ fun SkillCheckbox(
 
 
 
-setContent {
-    QuestTugasUserInput_0153Theme {
-        Act4()
-    }
+@Composable
+fun Act4() {
+    FormBiodataScreen()
 }
