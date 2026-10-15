@@ -420,7 +420,17 @@ fun SkillCheckbox(
 
 
 
-Modifier
-.align(Alignment.TopCenter)
-.padding(top = 65.dp)
-.size(110.dp)
+Column(
+modifier = Modifier
+.fillMaxWidth()
+.background(
+color = Color.White,
+shape = RoundedCornerShape(
+topStart = 28.dp,
+topEnd = 28.dp
+)
+)
+.padding(24.dp)
+) {
+    // Isi form
+}
