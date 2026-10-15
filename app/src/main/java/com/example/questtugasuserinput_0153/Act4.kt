@@ -420,12 +420,8 @@ fun SkillCheckbox(
 
 
 
-Scaffold { innerPadding ->
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(innerPadding)
-    ) {
-        // Isi halaman
-    }
+Box(
+modifier = Modifier.fillMaxSize()
+) {
+    // Komponen halaman
 }
