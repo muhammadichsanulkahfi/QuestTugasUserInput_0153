@@ -420,8 +420,7 @@ fun SkillCheckbox(
 
 
 
-Image(
-painter = painterResource(R.drawable.logo_spider),
-contentDescription = stringResource(R.string.logo_description),
-modifier = Modifier.size(110.dp)
-)
+Modifier
+.align(Alignment.TopCenter)
+.padding(top = 65.dp)
+.size(110.dp)
