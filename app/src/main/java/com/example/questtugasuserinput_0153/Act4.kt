@@ -421,10 +421,7 @@ fun SkillCheckbox(
 
 
 Image(
-painter = painterResource(R.drawable.bg_brick_purple),
-contentDescription = null,
-modifier = Modifier
-.fillMaxWidth()
-.height(280.dp),
-contentScale = ContentScale.Crop
+painter = painterResource(R.drawable.logo_spider),
+contentDescription = stringResource(R.string.logo_description),
+modifier = Modifier.size(110.dp)
 )
